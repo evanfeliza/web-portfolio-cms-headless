@@ -33,22 +33,28 @@ const profile = {
       description: "Add your social media links:",
       fields: [
         {
-          name: "github",
+          name: "githubURL",
           title: "Github URL",
           type: "url",
-          initialValue: "https://github.com/evanfeliza",
+          initialValue: "https://github.com/john-doe",
         },
         {
-          name: "linkedin",
+          name: "linkedinURL",
           title: "Linkedin URL",
           type: "url",
-          initialValue: "https://linkedin.com/in/",
+          initialValue: "https://linkedin.com/in/john-doe",
         },
         {
-          name: "google",
+          name: "messengerURL",
+          title: "Messenger URL",
+          type: "url",
+          initialValue: "http://m.me/john-doe",
+        },
+        {
+          name: "googleEmail",
           title: "Email",
           type: "string",
-          initialValue: "juan_dela_cruz@gmail.com",
+          initialValue: "john-doe@gmail.com",
         },
       
       ],
