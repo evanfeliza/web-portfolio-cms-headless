@@ -64,14 +64,48 @@ const profile = {
         columns: 2,
       },
     },
+   
     {
-      name: "skills",
-      title: "Skills",
+      name: "techStack",
+      title: "Tech Stack ",
       type: "array",
-      description: "Add a list of skills",
-      of: [{ type: "string" }],
+      description: "Add a list of your Stack",
+      of: [{type:"string"}],
     },
-
+    {
+      name: "timeline",
+      title: "My Timeline",
+      type: "array",
+      description: "Add a list of your timeline",
+      of: [{ 
+        name: "events",
+        title: "education and experience",
+        type: "object",
+        description: "Add your Education and Experience:",
+        fields:[   {
+          name: "event",
+          title: "Event",
+          type: "string",
+        },
+        {
+          name: "year",
+          title: "Year",
+          type: "string",
+        },
+        {
+          name: "location",
+          title: "Location",
+          type: "string",
+        },
+        {
+          name: "logo",
+          title: "Logo",
+          description: `checkout InterfaceIcons in FavIcons.(Note: replace "class" with "classNames")`,
+          type:"code"
+        },
+        ]
+      }],
+    },
     {
       name: "projects",
       title: "My Projects",
@@ -102,33 +136,16 @@ const profile = {
           title: "Project Code Link",
           type: "url",
         },
+        {
+          name:"techTags",
+          title:"Tags",
+          type: "array",
+          of:[{type:"string"}] 
+        }
         ]
       }],
     },
-    {
-      name: "techStack",
-      title: "Tech Stack",
-      type: "array",
-      description: "Add a list of your Tech Stack and it's Logo",
-      of: [{ 
-        name: "stack",
-        title: "Tech Stack",
-        type: "object",
-        description: "Add your tech stack.",
-        fields:[   {
-          name: "stackName",
-          title: "Name",
-          type: "string",
-        },
-                  {
-          name: "stackLogo",
-          title: "Logo",
-          type: "image",
-        },
-        ]
-      }],
-    },
-
+  
  ],
 };
 
