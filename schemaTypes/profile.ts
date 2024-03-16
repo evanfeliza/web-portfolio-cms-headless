@@ -1,4 +1,4 @@
-import { defineField } from "sanity";
+import { def } from "sanity";
 import { BiUser } from "react-icons/bi";
 
 const profile = {
@@ -8,19 +8,19 @@ const profile = {
   icon: BiUser,
   
   fields: [
-    defineField({
+{
       name: "fullName",
       title: "Full Name",
       type: "string",
       validation: (rule) => rule.required(),
-    }),
-    defineField({
+    },
+ {
       name: "description",
       title: "Description",
       type: "string",
       description: "In one short sentence, what do you do?",
       validation: (Rule) => Rule.required().min(40).max(1000),
-    }),
+    },
     {
       name: "resumeURL",
       title: "Upload Resume",
