@@ -18,7 +18,7 @@ export default defineConfig({
     defaultDataset: 'production',
 
   }),codeInput()]
-  : [structureTool()],
+  : [structureTool(),codeInput()],
   schema: {
     types: schemaTypes,
   },
